@@ -18,7 +18,7 @@ before_install:
  - docker build -t gantihk/react-test -f ./client/Dockerfile.dev ./client
 
 script:
- - docker run -e CI=true gantihk/docker-react npm run test
+ - docker run -e CI=true gantihk/react-test npm run test
 
 deploy:
  provider: script
