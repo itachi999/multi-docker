@@ -12,6 +12,6 @@ docker push gantihk/multi-worker:$SHA
 
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployments server=gantihk/multi-server:$SHA
-kubectl set image deployments/client-deployments client=gantihk/multi-client:$SHA
-kubectl set image deployments/worker-deployments worker=gantihk/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=gantihk/multi-server:$SHA
+kubectl set image deployments/client-deployment client=gantihk/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=gantihk/multi-worker:$SHA
